@@ -13,8 +13,9 @@ class Product:
 
         # ID imput
         Label(frame, text='ID: '). grid(row=1, column=0)
-        self.name = Entry(frame)
-        self.name.grid(row=1, column=1)
+        self.id = Entry(frame)
+        self.id.focus()
+        self.id.grid(row=1, column=1)
 
           # Name imput
         Label(frame, text='Name: '). grid(row=2, column=0)
@@ -23,8 +24,11 @@ class Product:
 
          # City imput
         Label(frame, text='City: '). grid(row=3, column=0)
-        self.name = Entry(frame)
-        self.name.grid(row=3, column=1)
+        self.city = Entry(frame)
+        self.city.grid(row=3, column=1)
+
+        # publish button
+        ttk.Button(frame, text = 'Publish').grid(row=4, column=2, sticky= W +E)
 
 
 if __name__ == '__main__':
